@@ -6,7 +6,10 @@ load_dotenv()
 # 各種ライブラリの読み込み
 import streamlit as st
 from dotenv import load_dotenv
-from langchain.chat_models import ChatOpenAI
+#from langchain.chat_models import ChatOpenAI
+
+from langchain_openai import ChatOpenAI
+
 from langchain.schema import SystemMessage, HumanMessage
 
 # 環境変数の読み込み
@@ -71,7 +74,7 @@ user_message = st.text_input(label="相談内容を入力してください")
 
 # ボタン
 if st.button("送信"):
-    # 区切り線
+    # 区切り線q
     st.divider()
     # LLMからの回答取得
     response = get_llm_response(user_message, selected_theme)
