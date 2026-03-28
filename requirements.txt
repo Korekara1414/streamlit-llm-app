@@ -28,6 +28,7 @@ openai==2.30.0
 packaging==24.2
 pandas==2.3.3
 pillow==11.3.0
+langchain-openai
 protobuf==5.29.6
 pyarrow==23.0.1
 pydantic==2.12.5
