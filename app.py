@@ -10,7 +10,10 @@ from dotenv import load_dotenv
 
 from langchain_openai import ChatOpenAI
 
-from langchain.schema import SystemMessage, HumanMessage
+#from langchain.schema import SystemMessage, HumanMessage
+#以下に修正20260329
+from langchain_core.messages import SystemMessage, HumanMessage
+
 
 # 環境変数の読み込み
 load_dotenv()
